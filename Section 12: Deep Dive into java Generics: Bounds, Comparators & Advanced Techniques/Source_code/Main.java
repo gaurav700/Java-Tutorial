@@ -6,16 +6,29 @@ import Source_code.code.BaseballPlayer;
 public class Main {
 
     public static void main(String[] args) {
-        SportsTeam footballTeam = new SportsTeam("Dallas Cowboys");
-        SportsTeam baseballTeam = new SportsTeam("New York Yankees");
+        SportsTeam footballTeam1 = new SportsTeam("Dallas Cowboys1");
+        SportsTeam footballTeam2 = new SportsTeam("Dallas Cowboys2");
 
-        var tex = new FootballPlayer("Tex walker", "centre half forward");
-        footballTeam.addTeamMember(tex);
-        footballTeam.listTeamMembers();
+        var tex1 = new FootballPlayer("Tex walker1", "centre half forward");
+        footballTeam1.addTeamMember(tex1);
+        footballTeam1.listTeamMembers();
+        var tex2 = new FootballPlayer("Tex walker2", "centre half forward");
+        footballTeam2.addTeamMember(tex2);
+        footballTeam2.listTeamMembers();
 
-        var mike = new BaseballPlayer("Mike Harper", "Pitcher");
-        baseballTeam.addTeamMember(mike);
-        baseballTeam.listTeamMembers();
+
+        SportsTeam baseballTeam1 = new SportsTeam("New York Yankees1");
+        SportsTeam baseballTeam2 = new SportsTeam("New York Yankees2");
+
+        var mike1 = new BaseballPlayer("Mike Harper1", "Pitcher");
+        baseballTeam1.addTeamMember(mike1);
+        baseballTeam1.listTeamMembers();
+        var mike2 = new BaseballPlayer("Mike Harper2", "Pitcher");
+        baseballTeam2.addTeamMember(mike2);
+        baseballTeam2.listTeamMembers();
+
+        scoreResult(footballTeam1, footballTeam2, 4, 7);
+        scoreResult(baseballTeam1, baseballTeam2, 2, 0);
 
     }
 
